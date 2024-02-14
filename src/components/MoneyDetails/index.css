@@ -1,0 +1,66 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.money-details-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.money-detail-item {
+  border-radius: 20px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  width: 30%;
+}
+.your-balance {
+  background-color: #ecfccb;
+  border: 2px solid #84cc16;
+}
+.your-income {
+  background-color: #cffafe;
+  border: 2px solid #06b6d4;
+}
+.your-expenses {
+  background-color: #ede9fe;
+  border: 2px solid #7c3aed;
+}
+.money-details-img {
+  width: 70px;
+}
+.money-value-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.money-detail {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+.money-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+@media (width <=768px) {
+  .money-details-section {
+    flex-direction: column;
+  }
+  .money-detail-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+ 
+}

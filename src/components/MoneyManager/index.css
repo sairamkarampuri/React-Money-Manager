@@ -1,0 +1,169 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.bg-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  padding: 20px;
+}
+.heading-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.username {
+  font-size: 30px;
+  color: #475569;
+}
+.welcome-msg {
+  font-size: 16px;
+  color: #475569;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.highlited-text {
+  color: #0b69ff;
+}
+.money-details-container {
+  width: 100%;
+}
+
+@media (567px >= width <= 768px) {
+  .main-container {
+    width: 80%;
+  }
+}
+
+@media (width <=768px) {
+  .main-container {
+    width: 90%;
+  }
+  .username{
+    text-align: center;
+  }
+  .welcome-msg{
+    text-align: center;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+.trasaction-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 15px;
+}
+.add-transaction-section {
+  width: 40%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.add-transaction-heading {
+  font-size: 18px;
+  color: #334155;
+  margin-bottom: 10px;
+}
+.input-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.label-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e858e;
+  margin-bottom: 5px;
+}
+.input-text-box {
+  width: 100%;
+  font-size: 14px;
+  color: #7e858e;
+  border: 1px solid #7e858e;
+  padding: 5px 12px;
+  outline: none;
+}
+.add-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+@media (width <=768px) {
+  .trasaction-items-container {
+    flex-direction: column;
+  }
+  .add-transaction-section {
+    width: 100%;
+  }
+}
+/* ---------------------------------------------------------------------- */
+.transaction-history-sectoin {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 20px;
+}
+.history-heading {
+  font-size: 18px;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.history-showing-section {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.list-item-header {
+  display: flex;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  padding: 8px 16px;
+}
+.table-header-names {
+  width: 30%;
+  margin-right: 5px;
+}
+
+@media (width <=768px) {
+  .transaction-history-sectoin {
+    width: 100%;
+    padding: 15px;
+  }
+  .history-showing-section {
+    width: 100%;
+  }
+}
