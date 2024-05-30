@@ -37,6 +37,7 @@ class MoneyManager extends Component {
 
   onChangeSelectOption = event => {
     this.setState({optionInput: event.target.value})
+    // console.log(event.target.value)
   }
 
   // Add The Transation to the history
@@ -59,7 +60,7 @@ class MoneyManager extends Component {
       historyList: [...prevState.historyList, newtransactionItem],
       titleInput: '',
       amountInput: '',
-      optionInput: transactionTypeOptions[0].optionId,
+      // optionInput: transactionTypeOptions[0].optionId,        due to this when we dont change the option it will getting problem.
     }))
   }
 
@@ -118,10 +119,12 @@ class MoneyManager extends Component {
   }
 
   render() {
-    const {historyList, titleInput, amountInput} = this.state
+    const {historyList, titleInput, amountInput, optionInput} = this.state
     const balanceAmount = this.getBalance()
     const incomeAmount = this.getIncome()
     const expensesAmount = this.getExpenses()
+
+    console.log(optionInput)
 
     return (
       <div className="bg-container">
